@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <style type="text/css">
+        .clock {
+            background: #fff url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
+            background-size: 100%;
+            top: 50%;
+            height: 20em;
+            padding-bottom: 31%;
+            width: 20em;
+        }
+
+        .barra {
+            width: 3px;
+            height: 130px;
+            background-color: red;
+            transform-origin: 30% 100%;
+            -webkit-transform-origin: 30% 100%;
+        }
+
+        .second-container {
+            position: absolute;
+            left: 50%;
+            top: 41%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .center-element {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .dot {
+            top: 50%;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            width: 20px;
+            height: 20px;
+        }
+
+        @-webkit-keyframes rotate-seconds {
+            100% {
+                -webkit-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+            }
+
+        }
+
+        @keyframes rotate-seconds {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .seconds {
+            -webkit-animation: rotate-seconds 60s infinite linear;
+            animation: rotate-seconds 60s infinite linear;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="clock center-element">
+
+        <div class="dot center-element">
+        </div>
+        <div class="second-container">
+            <div class="barra seconds"></div>
+        </div>
+    </article>
+</body>
+
+</html>

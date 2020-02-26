@@ -1,0 +1,33 @@
+@media screen and (max-width: 1600px) {
+  div {
+    width: 24.6%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div {
+    width: 24.5%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  div {
+    width: 24.4%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  div {
+    width: 49%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div {
+    width: 100%;
+  }
+}
