@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      background-color: #50f
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World!!!</h1>
+  <p>This is my first web page...</p>
+  <form action="donde_se_va_a_recibir.html" method="POST">
+    <label for="favorite-animal">Favorite Animal</label><br>
+    <input name="favorite-animal" id="favorite-animal" type="text">
+    <br>
+    <label for="animal">Animal select</label><br>
+    <select id="animal" name="animal">
+      <option value="American">American flamingo</option>
+      <option value="Andean">Andean flamingo</option>
+      <option value="Chilean">Chilean flamingo</option>
+      <option value="Greater">Greater flamingo</option>
+      <option value="James's">James's flamingo</option>
+      <option value="Lesser">Lesser flamingo</option>
+    </select>
+    <br>
+    <label for="animal">Vehiculo</label><br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+    <br>
+    <label for="animal">Sexo</label><br>
+
+    <input type="radio" name="gender" value="male"> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other
+   
+  </form>
+  <a href="perfil.html">
+    - Go to my Profile
+  </a>
+
+  <script>
+    var parrafo = document.querySelector('p');
+    parrafo.style.cursor = 'pointer';
+    parrafo.addEventListener('mouseenter', function () {
+      parrafo.style.color = 'orange';
+    });
+    parrafo.addEventListener('mouseleave', function () {
+      parrafo.style.color = 'white';
+    });
+
+  </script>
+</body>
+
+</html>
